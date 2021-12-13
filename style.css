@@ -1,0 +1,774 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #c67732;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.menu {
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.center-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 36px;
+    position: relative;
+    right: 105px;
+    
+}
+
+ul {
+    list-style: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu  ul  li {
+    display:inline-block;
+    margin-right: 32px;
+}
+
+.left-menu {
+    margin-left: 48px;
+}
+
+
+.right-menu {
+    margin-right: 48px;
+}
+
+
+
+.menu ul li a::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: #c67732; 
+    margin-top: 2px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+.menu ul li a:hover::after     {
+    width: 100%;
+}
+
+
+/* Done Menu */
+
+.banner {
+    position: relative;
+    margin-top: 80px;
+}
+
+.banner > img {
+    width: 100%;
+    
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 260px ;
+    left: 250px;
+    align-items: center;
+}
+
+.banner-text  span {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    
+}
+
+.banner-text  span:first-child {
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+
+.banner-text  span:nth-child(2) {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.banner-text  span:nth-child(3) {
+    font-size: 30px;
+    margin-bottom: 35px;
+
+}
+
+.banner .banner-btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 700;
+    color: #c35b00;
+}
+
+.banner .banner-btn:hover  {
+    background-color: #c35b00;
+    color: #fff;
+}
+
+/* Done Banner */
+
+h2.best-seller {
+   text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #52433e;
+    font-size: 34px;
+    font-weight: 400;
+    align-self: center;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin:0 100px 75px;
+}
+
+.product-item-img {
+    width: 420px;
+    height: 420px;
+    
+}
+
+
+.product-item-infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item-infor > span > a {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #000;
+}
+
+.product-item-infor  span:nth-child(odd) {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #000;
+    margin-top: 14px;
+}
+
+.product-item-infor span:nth-child(even) {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #938985;
+    font-style: italic;
+    margin-top: 14px;
+}
+
+/* Done Product Demo */
+
+.business-partner-text {
+    color: #dba87c;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 600;
+}
+
+.business-partner-slogan {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #574844;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.business-partner-logo {
+    display:flex;
+    justify-content: center;
+
+}
+
+.partner-logo {
+    width: 140px;
+    height: 140px;
+    margin: 10px 40px;
+}
+
+/* Done Bussines Partner */
+
+.home-description {
+    background-color: #fdfbf9;
+    height: 420px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.home-description .description1 {
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    color: #52433e;
+    position: relative;
+    top: 45px;
+}
+.home-description .description2 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #938985;
+    position: relative;
+    top: 80px;
+}
+
+button.shopAll {
+    width: 210px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    background-color: #fff;
+    color: #52433e;
+    font-size: 12px;
+    position: relative;
+    top: 125px;
+    font-weight: 600;
+}
+
+button.shopAll:hover {
+    background-color: #faeadf;
+    color: #c67732;
+    border-style: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.foot-image {
+    height: 576px;
+    background-image: url(./images/playa-d-footer-2x_575.jpg);
+    background-position: center;
+    background-size:cover;
+}
+
+/* Done Content */
+
+footer {
+    margin-top: 100px;
+}
+
+footer .rotate-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+footer .connection {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 150px 120px;
+}
+
+ul.contact, ul.support {
+    flex:1;
+}
+
+.connection ul li {
+    font-size: 14px;
+    color: #938985;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+
+}
+
+.connection ul li:first-child, h3.keepintouch {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #52433e;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+ h3.keepintouch {
+    position: relative;
+    left: 145px;
+}
+
+.keep-in-touch {
+    flex: 1.5;
+    padding: 0 200px;
+}
+.mailsub {
+    display: flex;
+    align-items: center;
+}
+
+.sub-btn {
+    color: #938985;
+    position: relative;
+    top: 12px;
+    font-size: 14px;
+}
+
+.sub-btn:hover {
+    color: #c67732;
+}
+
+.input-data {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    padding-right: 15px;
+}
+.input-data input   {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px solid silver;
+    outline: none;
+    color: #52433e;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+    transform: translateY(-30px);
+    color: #c67732;
+    font-size: 13px;
+}
+
+.input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.foot-bar {
+    height: 80px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+img.copyright {
+    width: 14px;
+}
+
+.foot-bar ul {
+    display: flex;
+    
+}
+
+.foot-bar ul li a {
+    color: #938985;
+    font-size: 13px;
+    margin-left: 22px;
+    letter-spacing: 1px;
+}
+
+.foot-bar-left img {
+    color: #938985;
+    position: relative;
+    top: 2px;
+}
+
+.foot-bar-right {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.foot-bar-right i {
+    color: #938985;
+    font-size: 19px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.foot-bar-right .line {
+    height: 25px;
+    width: 2.5px;
+    background-color: #938985;
+}
+
+.foot-bar-right a {
+    margin-top: 7px;
+}
+
+.foot-bar-right a::before {
+    content: " ";
+    display: block;
+    width: 19px;
+    height: 2px;
+    background-color: #938985;
+    margin-bottom: 2px;;
+}
+
+
+/* DONE INDEX.HTML - HOMEPAGE */
+
+.log-in-content {
+    display: flex;
+    margin: 80px 0 120px;
+}
+
+.log-in-content img.left-img {
+    width: 500px;
+    height: 880px;
+}
+
+.center-text {
+    margin: 100px 200px 0 100px;
+    width: 282px;
+}
+
+.center-text h4 {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.center-text h2 {
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    color: #52433e;
+    font-weight: 400;
+}
+
+.log-in-content .right-input-field {
+    width: 550px;
+    margin: 160px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-input-field .mailsub {
+    margin-bottom: 50px;
+}
+
+.right-input-field .login-btn {
+    height: 60px;
+    width: 100%;
+    background-color: #c67732;
+    color: #fff;
+    font-weight: 800;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.right-input-field .social-login {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    margin: 18px;
+}
+
+.right-input-field h5, p {
+    text-align: center;
+    padding-top: 25px;
+    letter-spacing: 1px;
+    color: #938985;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.right-input-field h5>a , p>a {
+    border-bottom: solid 1.75px #c67732;
+    color: #938985;
+}
+
+
+/* DONE LOGIN */
+
+.product-list {
+    margin-top: 120px;
+    
+}
+
+
+/* Start Product Detail */
+
+.product_detail-content {
+    margin-top: 80px;
+}
+
+.section1 {
+    display: flex;
+}
+
+.section1 img {
+    width: 1000px;
+    height: 900px;
+}
+
+.section1-right p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.section1-right p:first-child {
+    font-family: 'Playfair Display', serif;
+    color: #52433e;
+    font-size: 40px;
+    margin-top: 35px;
+
+}
+
+.section1-right p:nth-child(2) {
+    font-family: 'Playfair Display', serif;
+    color: #52433e;
+    font-size: 30px;
+}
+.section1-right p:nth-child(3) {
+    font-family: 'Playfair Display', serif;
+    color: #938985;
+    font-size: 24px;
+    font-style: italic;
+}
+.section1-right strong {
+    font-family: 'Open Sans', serif;
+    color: #52433e;
+    font-size: 14px;
+    font-style: italic;
+    border-bottom: 1.5px solid #c67732;
+}
+
+.section1-right p:nth-child(5) {
+    font-family: 'Open Sans', serif;
+    color: #938985;
+    font-size: 18px;
+    margin: 30px 180px 0;
+    
+}
+
+
+.section1-right {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+button.b250,  button.b500 {
+    position: absolute;
+    bottom:350px;
+    width: 120px;height: 50px;
+    color: #52433e;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1.75px solid #938985;
+
+}
+
+button.b250:hover,  button.b500:hover {
+    border: 2px solid #c67732;
+    box-shadow: none;
+    color: #c67732;
+}
+
+button.b250 {
+    left: 35%;
+}
+
+button.b500 {
+    right: 35%
+}
+
+.section1-right button:nth-child(8), button:nth-child(9)   {
+    display: block;
+    width: 50%;
+    align-self: center;
+    position: relative;
+    top: 150px;
+    height: 70px;
+    font-weight: 600;
+    background-color: #fff;
+    border: 1.75px solid;
+}
+
+.section1-right button:nth-child(8) {
+    color: #938985;
+}
+.section1-right button:nth-child(9) {
+    border: 1.75px;
+    border-top:none;
+    color: #fff;
+    background-color: #c67732;
+    transition: all 0.25s linear;
+
+}
+
+
+.section1-right button:nth-child(8):hover {
+    border: 1.75px solid #c67732;
+    color: #c67732;
+    cursor: pointer;
+}
+
+.section1-right button:nth-child(9):hover {
+    color:  #c67732;
+    background-color: #ffeddd;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); 
+
+}   
+
+/* DONE SECTION1  */
+
+.section2 {
+    display: flex;
+    margin-top: 120px;
+}
+
+.section2 img {
+    width: 720px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.section2-right {
+    margin: 160px 200px 0 150px;
+    flex-direction: column;
+}
+
+.section2-right h4 {
+    margin-bottom: 50px;
+}
+
+.section2-right h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #52433e;
+    font-weight: 400;
+}
+
+.section2-right button {
+    width: 200px;
+    margin-top: 50px;
+    height: 50px;
+    background-color: #fff;
+    font-weight: 600;
+    border: 1.75px solid #52433e;
+    transition: all 0.25s linear;
+    color:#52433e;
+}
+
+.section2-right button:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #faeadf;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); 
+    color:#c67732;
+}
+
+/* DONE S2 */
+
+.section3 {
+    display: flex;
+    margin-top: 120px;
+    flex-direction: row-reverse;
+}
+
+.section3 img {
+    width: 720px;
+    height: auto;
+    margin-right: 150px;
+}
+
+.section3-right {
+    margin: 160px 180px 0 150px;
+    flex-direction: column;
+}
+
+.section3-right h4 {
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #52433e;
+    font-weight: 400;
+}
+
+.section3-right h3 {
+    font-size: 32px;
+    color: #938985;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+
+}
+
+/* done section 3 */
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.section4-img  {
+    display: flex;
+    
+}
+
+.section4 p {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: #574844;
+}
+
+.section4 .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.section4-img .img img {
+    width: 200px;
+}
+
+.section4-img .img h5 {
+    color: #574844;
+    font-size: 16px;
+}
