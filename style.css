@@ -24,11 +24,11 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+
 .center-logo {
     font-family: 'DM Serif Display', serif;
     font-size: 36px;
-    position: relative;
-    right: 105px;
+    flex:1;
     
 }
 
@@ -49,11 +49,15 @@ a {
 
 .left-menu {
     margin-left: 48px;
+    flex: 1;
 }
 
 
 .right-menu {
     margin-right: 48px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -323,13 +327,16 @@ ul.contact, ul.support {
 }
 
  h3.keepintouch {
-    position: relative;
-    left: 145px;
+    /* position: relative;
+    left: 145px; */
+    align-self: center;
 }
 
 .keep-in-touch {
     flex: 1.5;
     padding: 0 200px;
+    display:flex;
+    flex-direction: column;
 }
 .mailsub {
     display: flex;
