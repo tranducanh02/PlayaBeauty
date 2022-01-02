@@ -29,7 +29,6 @@
     font-family: 'DM Serif Display', serif;
     font-size: 36px;
     flex:1;
-    
 }
 
 ul {
@@ -87,7 +86,6 @@ a {
 
 .banner > img {
     width: 100%;
-    
 }
 
 .banner-text {
@@ -102,7 +100,6 @@ a {
 .banner-text  span {
     font-family: 'Playfair Display', serif;
     color: #000;
-    
 }
 
 .banner-text  span:first-child {
@@ -327,8 +324,6 @@ ul.contact, ul.support {
 }
 
  h3.keepintouch {
-    /* position: relative;
-    left: 145px; */
     align-self: center;
 }
 
