@@ -539,7 +539,7 @@ img.copyright {
     display: flex;
 }
 
-.section1 img {
+.section1 .splide {
     width: 1000px;
     height: 900px;
 }

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./themify-icons/themify-icons.css">
     <link rel="icon" href="./images/hairdresser.png">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="./splide/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./splide/dist/css/splide.min.css">
     <title>PlayaBeauty</title>
 </head>
 <body>
@@ -34,7 +36,15 @@
 
     <div class="product_detail-content">
         <div class="section1">
-            <img src="./images/SlideImg2.jpg" alt="">
+            <div class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img style="width: 1000px; height:900px" src="./images/EverydayShamppo.jpg" alt=""></li>
+                          <li class="splide__slide"><img style="width: 1000px; height:900px" src="./images/slide1.jpg" alt=""></li>
+                          <li class="splide__slide"><img style="width: 1000px; height:900px" src="./images/slide3.jpg" alt=""></li>
+                      </ul>
+                </div>
+            </div>
             <div class="section1-right">
                 <p>Supernatural Conditioner</p>
                 <p>$28.00</p>
@@ -143,5 +153,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        new Splide( '.splide',{
+            type : 'fade',
+            autoplay: true,
+            rewind: true,
+        } ).mount();
+        
+    </script>
 </body>
 </html>
